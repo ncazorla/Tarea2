@@ -24,4 +24,8 @@ public class FuncionesUsuario {
 		
 		return impuesto - (impuesto * porcentaje / 100);	
 	}
+
+	public void cobroSueldo(Usuario usuario, float sueldo) {
+		usuario.setSaldo(usuario.getSaldo() + sueldo);
+	}
 }
