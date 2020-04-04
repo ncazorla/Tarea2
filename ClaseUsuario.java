@@ -66,4 +66,9 @@ public class Usuario {
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
+
+	@Override
+	public boolean equals(Object u) {
+		return ((Usuario) u).getCI() == this.getCI();
+	}
 }
